@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    overflow: hidden;
+}
+
+.button{
+    display:flex;
+    padding:0px 50px;
+    border: 3px solid #FFF;
+    width:fit-content;
+    margin: 50px;
+}
+
+p{
+    display:block;
+    max-width:100vw;
+    font-size: 24px;
+}
+
+.button a{
+    color : #fff;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+
+h1{
+    font-family: Harry_Potter;
+    font-size: 128px;
+    font-weight: 400;
+}

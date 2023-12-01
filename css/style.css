@@ -1,0 +1,44 @@
+@font-face {
+    font-family : "Bluu_Next";
+    src:
+        local("bluu_next"),
+        url("BluuNext-Titling.otf") format("opentype");
+}
+
+@font-face {
+    font-family : "Sofia_Pro";
+    src:
+        local("sofia_pro"),
+        url("SofiaProMedium.ttf") format("truetype"),
+        url("SofiaProBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family : "Harry_Potter";
+    src:
+        local("harry_p"),
+        url("HarryPotter.ttf") format("truetype");
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(../img/Purple_Background.png);
+    color: #FFFF;
+    font-family: Sofia Pro;
+}
+
+#wrap{
+    margin : 64px;
+}
+
+h2,h3,h4{
+    font-family: Bluu_Next;
+}
+
+strong{
+    color: #9747FF;
+}
