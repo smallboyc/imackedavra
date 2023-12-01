@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    gap: 50px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#rules{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#start_path{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    color: #FFF;
+    font-family: Bluu_Next;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p, li{
+    font-size: 20px;
+}
+
+

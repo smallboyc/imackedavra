@@ -1,19 +1,33 @@
+@font-face {
+    font-family : "Harry_Potter";
+    src:
+        local("harry_p"),
+        url("../fonts/harry_p/HarryPotter.TTF") format("truetype");
+}
+
+
 body{
     text-align: center;
     overflow: hidden;
 }
 
+h1{
+    font-family: Harry_Potter;
+}
+
 .button{
     display:flex;
-    padding:0px 50px;
+    padding:10px 50px;
     border: 3px solid #FFF;
     width:fit-content;
     margin: 50px;
+    transition:  0.5s ease-out
 }
 
 p{
     display:block;
-    max-width:100vw;
+    max-width:60vw;
+    width: 100%;
     font-size: 24px;
 }
 
@@ -21,7 +35,19 @@ p{
     color : #fff;
     font-size: 36px;
     text-decoration: none;
+    transition:  0.5s ease-out
 }
+
+
+.button:hover {
+    background-color: white;
+    transition:  0.5s ease-out
+  }
+
+  .button:hover a {
+    color: #9747FF;
+    transition:  0.5s ease-out
+  }
 
 main{
     display:flex;
@@ -36,4 +62,25 @@ h1{
     font-family: Harry_Potter;
     font-size: 128px;
     font-weight: 400;
+}
+
+
+/* Tablette */
+@media (max-width : 800px) 
+{
+    h1{
+        font-size: 80px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+/* Portable */
+@media (max-width : 540px) 
+{
+    h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
 }
