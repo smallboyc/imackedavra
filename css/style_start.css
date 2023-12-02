@@ -12,7 +12,10 @@ body{
 }
 
 h1{
-    font-family: Harry_Potter;
+  font-family: Harry_Potter;
+  font-size: 128px;
+  font-weight: 400;
+  animation: apparition 2s ease-in-out
 }
 
 .button{
@@ -21,7 +24,10 @@ h1{
     border: 3px solid #FFF;
     width:fit-content;
     margin: 50px;
-    transition:  0.5s ease-out
+    transition:  0.5s ease-out;
+    animation: apparition 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
 p{
@@ -29,6 +35,10 @@ p{
     max-width:60vw;
     width: 100%;
     font-size: 24px;
+    margin-top: 20px;
+    animation: apparition 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
 .button a{
@@ -58,11 +68,7 @@ main{
 }
 
 
-h1{
-    font-family: Harry_Potter;
-    font-size: 128px;
-    font-weight: 400;
-}
+
 
 span {
     display: inline-block;
@@ -74,28 +80,6 @@ span {
 
 .oscillation_second{
     animation: oscillation_second 1s ease-in-out infinite
-}
-
-
-
-/* Tablette */
-@media (max-width : 800px) 
-{
-    h1{
-        font-size: 80px;
-    }
-    p{
-        font-size: 16px;
-    }
-}
-
-/* Portable */
-@media (max-width : 540px) 
-{
-    h1{
-        font-size: 60px;
-        margin-bottom: 10px;
-    }
 }
 
 @keyframes oscillation_first {
@@ -122,5 +106,26 @@ span {
     }
   }
   
+
+  
+/* Tablette */
+@media (max-width : 800px) 
+{
+    h1{
+        font-size: 80px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+/* Portable */
+@media (max-width : 540px) 
+{
+    h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
   
 

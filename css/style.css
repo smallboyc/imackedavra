@@ -38,3 +38,11 @@ strong{
     color: #9747FF;
 }
 
+@keyframes apparition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+     opacity: 100%;
+  }
+}
