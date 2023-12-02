@@ -3,7 +3,7 @@ const quizContainer = document.getElementById("quiz");
 let table = [];
 let currentId = 0;
 
-//Fonction qui créé un li 
+//Fonction qui créé un li
 function newMember(data, span, i) {
   const li = document.createElement("li");
   li.textContent = data[i].name;
@@ -35,6 +35,7 @@ async function selectedHouse(totalChoices) {
 
   //Affichage dynamique du drapeau
   const houseImg = document.createElement("img");
+  houseImg.classList.add("flag");
   houseImg.src = `img/${result[0].name}.svg`;
   house.appendChild(houseImg);
 
