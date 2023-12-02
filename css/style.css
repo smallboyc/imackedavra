@@ -23,6 +23,10 @@ body{
     background-image: url(../img/Purple_Background.png);
     color: #FFFF;
     font-family: Sofia_Pro;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 #wrap{

@@ -3,7 +3,7 @@ const quizContainer = document.getElementById("quiz");
 let table = [];
 let currentId = 0;
 
-//Fonction qui créé un li
+//Fonction qui créé un li (optimisation)
 function newMember(data, span, i) {
   const li = document.createElement("li");
   li.textContent = data[i].name;
@@ -29,6 +29,7 @@ async function selectedHouse(totalChoices) {
     { name: "Serdaigle", api_value: "ravenclaw", value: b },
     { name: "Poufsouffle", api_value: "hufflepuff", value: j },
   ];
+  //On trie le tableau de résultat => l'élément 0 à la value la plus grande.
   result.sort((a, b) => b.value - a.value);
 
   const house = document.getElementById("house");
@@ -46,11 +47,12 @@ async function selectedHouse(totalChoices) {
 
   const members = document.getElementById("character");
 
+  //API
   const fetcher = await fetch(
     `https://hp-api.onrender.com/api/characters/house/${result[0].api_value}`
   );
   const data = await fetcher.json();
-  console.log(data);
+
   for (let i = 0; i < 6; i += 2) {
     const span = document.createElement("span");
     newMember(data, span, i);
@@ -80,7 +82,8 @@ function loadQuiz(quiz) {
     }
 
     //Création et ajout du titre de la question
-    const questionTitle = document.createElement("h1");
+    const questionTitle = document.createElement("p");
+    questionTitle.classList.add("questionTitle");
     questionTitle.textContent = question.title;
     questionDiv.appendChild(questionTitle);
 

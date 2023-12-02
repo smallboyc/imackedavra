@@ -1,14 +1,17 @@
 body{
     overflow: hidden;
 }
+
+
 .container
 {
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    height: 80vh;
+    animation: apparition 1.5s ease-in-out
 }
 
 #quiz
@@ -25,7 +28,12 @@ h1{
     font-family: Bluu_Next;
     text-align: center;
     font-size: 60px;
+}
 
+.questionTitle{
+    text-align: center;
+    font-size: 54px;
+    font-weight: bold;
 }
 
 #message{
@@ -86,6 +94,11 @@ ol{
     gap: 30px;
 }
 
+#members{
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 #character {
     display: flex;
@@ -102,84 +115,9 @@ ol{
 
 #choixpeau{
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -10;
 }
 
 
 
-/* CSS du bouton */
-#button-container{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 20px;
-}
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .button> div
-  {
-    position: absolute;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-  }
-
-  .parent{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #9747FF;
-    z-index: 5;
-  }
-
-  .child-link {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    background-color: white;
-  }
-
-  .child-link:nth-child(2) {
-    transform: translate(0, 0);
-  }
-
-  .child-link:nth-child(3) {
-    transform: translate(0, 0);
-  }
-
-  .child-link:nth-child(4) {
-    transform: translate(0, 0);
-  }
-
-  .button:hover .child-link:nth-child(2) {
-    transform: translate(-150%, 0);
-  }
-
-  .button:hover .child-link:nth-child(3) {
-    transform: translate(-100%, -100%);
-  }
-
-  .button:hover .child-link:nth-child(4) {
-    transform: translate(0, -150%);
-  }
-
-  .button:hover .parent{
-    transform: rotate(45deg);
-  }
-  
