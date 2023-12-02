@@ -64,6 +64,19 @@ h1{
     font-weight: 400;
 }
 
+span {
+    display: inline-block;
+  }
+  
+.oscillation_first{
+    animation: oscillation_first 1s ease-in-out infinite
+}
+
+.oscillation_second{
+    animation: oscillation_second 1s ease-in-out infinite
+}
+
+
 
 /* Tablette */
 @media (max-width : 800px) 
@@ -84,3 +97,30 @@ h1{
         margin-bottom: 10px;
     }
 }
+
+@keyframes oscillation_first {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes oscillation_second {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+
