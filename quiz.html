@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style_quiz.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/quiz.js"></script>
     <title>Quiz</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="text">Quiz.</h1>
+      <h1 id="title">Quiz.</h1>
       <div id="quiz"></div>
+      <div class="result">
+        <h1>Félicitations !</h1>
+        <p id="message">Tu appartiens à la maison :</p>
+        <div id="house">
+          <!-- <p>
+            Ton esprit créatif, ton audace et ta passion pour repousser les
+            limites de la technologie font de toi un véritable leader numérique.
+            Rejoins tes camarades de maison et explorez ensemble de nouvelles
+            façons de transformer le monde digital.
+          </p> -->
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="414"
+          height="4"
+          viewBox="0 0 414 4"
+          fill="none"
+        >
+          <path d="M0 2H414" stroke="white" stroke-width="3" />
+        </svg>
+
+        <p>Membres</p>
+        <ul id="character"></ul>
+      </div>
     </div>
-    <script type="module" src="js/quiz.js"></script>
   </body>
 </html>

@@ -3,15 +3,15 @@ const quizContainer = document.getElementById("quiz");
 let table = [];
 let currentId = 0;
 
-//Fonction de récupération de l'API
-async function getAPI(url) {
-  const fetcher = await fetch(url);
-  const data = await fetcher.json();
-  data.forEach((el) => console.log(el.name));
+//Fonction qui créé un li 
+function newMember(data, span, i) {
+  const li = document.createElement("li");
+  li.textContent = data[i].name;
+  span.appendChild(li);
 }
 
 //Fonction qui détermine le résultat du quiz
-function selectedHouse(totalChoices) {
+async function selectedHouse(totalChoices) {
   let r, v, b, j;
   r = v = b = j = 0;
   for (let i = 0; i < totalChoices.length; i++) {
@@ -30,13 +30,37 @@ function selectedHouse(totalChoices) {
     { name: "Poufsouffle", api_value: "hufflepuff", value: j },
   ];
   result.sort((a, b) => b.value - a.value);
-  const displayResult = document.createElement("p");
-  displayResult.textContent = "Bravo tu es " + result[0].name;
-  quizContainer.appendChild(displayResult);
-  getAPI(
+
+  const house = document.getElementById("house");
+
+  //Affichage dynamique du drapeau
+  const houseImg = document.createElement("img");
+  houseImg.src = `img/${result[0].name}.svg`;
+  house.appendChild(houseImg);
+
+  //Affichage dynamique du nom de la maison
+  const houseTitle = document.createElement("h1");
+  houseTitle.textContent = result[0].name;
+  house.appendChild(houseTitle);
+
+  const members = document.getElementById("character");
+
+  const fetcher = await fetch(
     `https://hp-api.onrender.com/api/characters/house/${result[0].api_value}`
   );
-  console.log(result);
+  const data = await fetcher.json();
+  console.log(data);
+  for (let i = 0; i < 6; i += 2) {
+    const span = document.createElement("span");
+    newMember(data, span, i);
+    newMember(data, span, i + 1);
+    members.appendChild(span);
+  }
+
+  const displayResult = document.querySelector(".result");
+  displayResult.style.display = "flex";
+  const displayTitle = document.getElementById("title");
+  displayTitle.style.display = "none";
 }
 
 //Génère toutes les questions - réponses + Affiche la première question - réponses
@@ -63,6 +87,7 @@ function loadQuiz(quiz) {
     const answersList = document.createElement("ol");
     question.answers.map((possibility, index) => {
       const answer = document.createElement("li");
+      answer.classList.add("answer");
       answer.id = index;
       answer.textContent = possibility.answer;
       answersList.appendChild(answer);
@@ -71,6 +96,7 @@ function loadQuiz(quiz) {
 
     //Création et ajout de la pagination
     const pagination = document.createElement("p");
+    pagination.classList.add("pagination");
     pagination.textContent = question.id + 1 + " / " + quiz.length;
     questionDiv.appendChild(pagination);
   });

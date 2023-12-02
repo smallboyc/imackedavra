@@ -1,6 +1,6 @@
 .container
 {
-    padding-top: 10vh;
+    padding-top: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@
     
     
 }
+
 #quiz
 {
     display: flex;
@@ -23,9 +24,15 @@ h1{
     font-family: Bluu_Next;
     text-align: center;
     font-size: 60px;
+
 }
 
-p
+#message{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.pagination
 {
     text-align: center;
     font-weight: bold;
@@ -38,13 +45,13 @@ ol{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     gap: 24px;
     padding: 0;
 }
 
-li{
+.answer{
     list-style-type: none;
     border: 2px solid white;
     width: 100%;
@@ -54,7 +61,7 @@ li{
     transition:  0.5s ease-out
 }
 
-li:hover{
+.answer:hover{
     scale: 105%;
     transition:  0.5s ease-out;
     background-color: gainsboro;
@@ -62,7 +69,28 @@ li:hover{
     cursor: pointer;
 }
 
-#result{
+img{
+    width: 15vw;
+}
+.result{
+    max-width: 70vw;
     display: none;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 30px;
+}
+
+
+#character {
+    display: flex;
+    gap: 50px;
+    max-width: 40vw;
+    margin-bottom: 20px;
+}
+
+#character > span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
