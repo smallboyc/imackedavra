@@ -125,7 +125,16 @@ svg {
 {
     h1{
         font-size: 40px;
-       }
+    }
+
+    .questionTitle{
+        font-size: 30px;
+    }
+
+    .answer{
+        font-size: x-large;
+    }
+
     #character {
         flex-direction: row;
         gap: 50px; 
@@ -140,6 +149,16 @@ svg {
    h1{
     font-size: 60px;
    }
+   .questionTitle{
+    font-size: 38px;
+}
+.pagination
+{
+    font-size: xx-large;
+}
+   .answer{
+    font-size: xx-large;
+}
    #message{
     font-size: 40px;
    }
