@@ -21,18 +21,12 @@
     padding:0;
 }
 
-html {
-    background: url(../img/Purple_Background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-}
-
 body{
     color: #FFFF;
     font-family: Sofia_Pro;  
+    background: url(../img/Purple_Background.png) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
 }
 
 #wrap{
@@ -58,12 +52,4 @@ strong{
   }
 }
 
-
-@media (max-width : 1300px) 
-{
-    body {
-        overflow: visible;
-        
-    }
-}
 

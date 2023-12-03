@@ -1,11 +1,11 @@
 body{
-    overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 .container
 {
-    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,21 +23,20 @@ body{
     gap: 20px;
 }
 
-
 h1{
     font-family: Bluu_Next;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .questionTitle{
     text-align: center;
-    font-size: 54px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 #message{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -53,7 +52,6 @@ ol{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin-top: 40px;
     margin-bottom: 20px;
     gap: 24px;
@@ -65,7 +63,7 @@ ol{
     border: 2px solid white;
     width: 100%;
     padding: 20px;
-    font-size: x-large;
+    font-size: medium;
     text-align: center;
     transition:  0.5s ease-out
 }
@@ -79,10 +77,8 @@ ol{
 }
 
 .flag{
-    width: 15vw;
+    width: 200px;
 }
-
-
 
 .result{
     position: relative;
@@ -99,11 +95,10 @@ ol{
     font-weight: bold;
 }
 
-
 #character {
     display: flex;
-    gap: 50px;
-    max-width: 40vw;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -117,7 +112,38 @@ ol{
     position: absolute;
     opacity: 0.3;
     z-index: -10;
+    width: 100%;
+}
+
+svg {
+    width: 200px;
 }
 
 
+/* Tablette */
+@media (min-width : 800px) 
+{
+    h1{
+        font-size: 40px;
+       }
+    #character {
+        flex-direction: row;
+        gap: 50px; 
+    }
+    svg {
+        width: 400px;
+    }
+}
 
+@media (min-width : 1200px) 
+{
+   h1{
+    font-size: 60px;
+   }
+   #message{
+    font-size: 40px;
+   }
+   .flag{
+    width: 300px;
+}
+}

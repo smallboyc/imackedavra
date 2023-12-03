@@ -13,7 +13,7 @@ body{
 
 h1{
   font-family: Harry_Potter;
-  font-size: 128px;
+  font-size: 40px;
   font-weight: 400;
   animation: apparition 2s ease-in-out
 }
@@ -34,7 +34,7 @@ p{
     display:block;
     max-width:60vw;
     width: 100%;
-    font-size: 24px;
+    font-size: 15px;
     margin-top: 20px;
     animation: apparition 1s ease-in-out forwards;
     animation-delay: 0.5s;
@@ -43,7 +43,7 @@ p{
 
 .button a{
     color : #fff;
-    font-size: 36px;
+    font-size: 24px;
     text-decoration: none;
     transition:  0.5s ease-out
 }
@@ -103,45 +103,32 @@ span {
     }
   }
   
-
-  
-/* Tablette */
-@media (max-width : 800px) 
+@media (min-width : 500px)
 {
-    h1{
-        font-size: 80px;
-    }
-    p{
-        font-size: 16px;
-    }
+  h1{
+    font-size: 70px;
+  }
+}
+    
+  
+@media (min-width : 800px)
+{
+  h1{
+    font-size: 100px;
+  }
+  p{
+    font-size: 24px;
+  }
 }
 
-/* Portable */
-@media (max-width : 600px) 
+@media (min-width : 1200px)
 {
-    h1{
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-    p{
-      font-size: 14px;
-    }
-    .button a{
-      font-size: 20px;
-    }
+  h1{
+    font-size: 140px;
+  }
+  .button a{
+    font-size: 32px;
+   
 }
-
-@media (max-width : 400px) 
-{
-    h1{
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-
-    p{
-      font-size: 12px;
-    }
 }
-  
-  
 
