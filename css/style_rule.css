@@ -97,8 +97,7 @@ svg {
     }
     #start_path svg {
         width: 140px;
-      }
-    
+      }  
 }
 
 @media (min-width : 1200px)
