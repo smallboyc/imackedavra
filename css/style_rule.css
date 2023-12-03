@@ -44,9 +44,6 @@ h1{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-h1 {
     animation: apparition 1.5s ease-in-out
 }
 

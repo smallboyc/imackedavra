@@ -1,0 +1,26 @@
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1{
+    color: #FFF;
+    font-family: Bluu_Next;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2{
+    font-family: Sofia_Pro;
+    font-size: 48px
+}
