@@ -1,5 +1,5 @@
 body{
-    margin-top: 50px;
+    margin:50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 50vw;
     gap: 20px;
     animation: apparition 1.5s ease-in-out
 }
@@ -31,7 +32,7 @@ h1{
 
 .questionTitle{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -128,7 +129,7 @@ svg {
     }
 
     .questionTitle{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .answer{
@@ -147,17 +148,17 @@ svg {
 @media (min-width : 1200px) 
 {
    h1{
-    font-size: 60px;
+    font-size: 55px;
    }
    .questionTitle{
-    font-size: 38px;
+    font-size: 32px;
 }
 .pagination
 {
     font-size: xx-large;
 }
    .answer{
-    font-size: xx-large;
+    font-size: x-large;
 }
    #message{
     font-size: 40px;

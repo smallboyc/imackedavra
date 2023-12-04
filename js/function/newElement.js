@@ -1,4 +1,9 @@
-export function newDivQuestion(questionDiv,quizContainer, question,currentId) {
+export function newDivQuestion(
+  questionDiv,
+  quizContainer,
+  question,
+  currentId
+) {
   questionDiv.classList.add("questionDiv");
   questionDiv.id = question.id;
   quizContainer.appendChild(questionDiv);
@@ -35,4 +40,11 @@ export function newPagination(questionDiv, question, quiz) {
   pagination.classList.add("pagination");
   pagination.textContent = question.id + 1 + " / " + quiz.length;
   questionDiv.appendChild(pagination);
+}
+
+//Fonction qui créé un li (optimisation)
+export function newHouseMember(data, span, i) {
+  const li = document.createElement("li");
+  li.textContent = data[i].name;
+  span.appendChild(li);
 }
