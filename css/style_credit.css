@@ -1,15 +1,14 @@
-main{
-    text-align: center;
+/* soyez pas archi regardant, je teste des chosesssss*/
+.credits{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    text-align:center;
+    gap: 70px;
+    margin: 150px;
 }
-.block{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 
 h1{
     color: #FFF;
@@ -22,5 +21,11 @@ h1{
 
 h2{
     font-family: Sofia_Pro;
-    font-size: 48px
+    font-size: 48px;
+    font-weight: 700;
+}
+
+p,ul{
+    list-style-type:none;
+    font-size: 36px
 }
