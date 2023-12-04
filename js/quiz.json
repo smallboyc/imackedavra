@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "title": "Qui es-tu à l'imac?",
+    "title": "Après votre entrée à l’IMAC vous participez à la fameuse cérémonie du wei. Plusieurs personnalités se forgent, qui es-tu l’IMAC ?",
     "answers": [
       { "id": 0, "answer": "Miss ou Mister Imac", "house": "R" },
       {
@@ -10,22 +10,22 @@
         "house": "V"
       },
       { "id": 2, "answer": "Le gilet jaune", "house": "J" },
-      { "id": 3, "answer": "Personne et je m'en branle", "house": "B" }
+      { "id": 3, "answer": "Personne et cela m'est égal", "house": "B" }
     ]
   },
   {
     "id": 1,
-    "title": "Quelle est ta matière préférée ?",
+    "title": "Après t’être familiarisé au monde merveilleux de l’IMAC, quelle est ta matière préférée ?",
     "answers": [
-      { "id": 0, "answer": "Pratique vidéo", "house": "R" },
-      { "id": 1, "answer": "Le Web et l'Anglais", "house": "J" },
-      { "id": 2, "answer": "Expression et écriture", "house": "B" },
-      { "id": 3, "answer": "La programmation C++ et les Maths", "house": "V" }
+      { "id": 0, "answer": "Pratique Vidéo", "house": "R" },
+      { "id": 1, "answer": "L'expression écriture", "house": "J" },
+      { "id": 2, "answer": "Les Mathématiques", "house": "B" },
+      { "id": 3, "answer": "La programmation", "house": "V" }
     ]
   },
   {
     "id": 2,
-    "title": "Vas-tu aux soirées de l’esiee?",
+    "title": "Vas-tu aux mystiques soirées de l’ESIEE?",
     "answers": [
       { "id": 0, "answer": "Oui", "house": ["R", "V"] },
       { "id": 1, "answer": "Non", "house": ["J", "B"] }
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "title": "Tu viens de",
+    "title": "Avant d’intégrer le château de l’IMAC, d’où venais-tu? ",
     "answers": [
       { "id": 0, "answer": "MMI", "house": "R" },
       { "id": 1, "answer": "DUT Info ", "house": "J" },
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "title": "As-tu fait ton gage de parrainage?",
+    "title": "Un mystérieux objet vous a choisi au début de l’année; as-tu fait ton gage de parrainage?",
     "answers": [
       { "id": 0, "answer": "Oui en plus d’un mois", "house": "R" },
       { "id": 1, "answer": "Non et je le ferai sûrement pas", "house": "V" },
@@ -53,12 +53,41 @@
   },
   {
     "id": 5,
-    "title": "Pour les courts-métrage tu préfères t’occuper de ?",
+    "title": "Lorsqu’il est temps de créer la magie des courts-métrages, de quoi t'occupes-tu ?",
     "answers": [
       { "id": 0, "answer": "La réalisation ", "house": "R" },
       { "id": 1, "answer": "L’acting", "house": "V" },
       { "id": 2, "answer": "Le son", "house": "J" },
       { "id": 3, "answer": "La prise de vue", "house": "B" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Alaric te demande de créer un site web inspiré de la fameuse DOC. Quelle partie réalises-tu?",
+    "answers": [
+      { "id": 0, "answer": "Le design/graphisme ", "house": "R" },
+      { "id": 1, "answer": "Le backend", "house": "V" },
+      { "id": 2, "answer": "HTML ou CSS", "house": "J" },
+      { "id": 3, "answer": "Le JavaScript", "house": "B" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Sonia a accidentellement laissé une bougie brûler dans son bureau, le château Copernic prend feu. Quelle chose sauverais-tu en premier?",
+    "answers": [
+      { "id": 0, "answer": "L'overboard d'Enguerrand", "house": "R" },
+      { "id": 1, "answer": "Les PC des salles infos", "house": "V" },
+      { "id": 2, "answer": "Les cookies du CROUS", "house": "J" },
+      { "id": 3, "answer": "Le matériel vidéo de l'IMAC", "house": "B" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Quel système d’exploitation as-tu?",
+    "answers": [
+      { "id": 0, "answer": "Mac OS", "house": "R" },
+      { "id": 1, "answer": "Linux", "house": "V" },
+      { "id": 2, "answer": "Windows", "house": ["J", "B"] }
     ]
   }
 ]

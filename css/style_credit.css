@@ -1,5 +1,5 @@
 /* soyez pas archi regardant, je teste des chosesssss*/
-.credits{
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,9 +14,7 @@ h1{
     color: #FFF;
     font-family: Bluu_Next;
     font-size: 80px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 h2{
