@@ -12,21 +12,25 @@ article{
     text-align: center;
 }
 
-.gryffondor{
+#gryffondor{
     background-image: url(../img/Gryffondor_Background.png);
-    background-repeat: no repeat;
+    background-size : 100%;
+    background-repeat: no-repeat;
 }
 
 #serpentard{
     background-image: url(../img/Serpentard_Background.png);
+    background-size : 100%;
 }
 
 #serdaigle{
     background-image: url(../img/Serdaigle_Background.png);
+    background-size: 100%;
 }
 
 #poufsouffle{
     background-image: url(../img/Poufsouffle_Background.png);
+    background-size: 100%;
 }
 
 h2{

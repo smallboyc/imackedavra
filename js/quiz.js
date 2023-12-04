@@ -1,3 +1,10 @@
+import {
+  newAnswers,
+  newDivQuestion,
+  newPagination,
+  newTitleQuestion,
+} from "./function.js";
+
 //On récupère la div principale : quizContainer
 const quizContainer = document.getElementById("quiz");
 let table = [];
@@ -69,40 +76,14 @@ async function selectedHouse(totalChoices) {
 //Génère toutes les questions - réponses + Affiche la première question - réponses
 function loadQuiz(quiz) {
   quiz.forEach((question) => {
-    //Création et ajout de la DIV contenant la question et les réponses
     const questionDiv = document.createElement("div");
-    questionDiv.classList.add("questionDiv");
-    questionDiv.id = question.id;
-    quizContainer.appendChild(questionDiv);
-    //Initialisation de la 1ère question
-    if (questionDiv.id == currentId) {
-      questionDiv.style.display = "block";
-    } else {
-      questionDiv.style.display = "none";
-    }
-
+    newDivQuestion(questionDiv, quizContainer, question, currentId);
     //Création et ajout du titre de la question
-    const questionTitle = document.createElement("p");
-    questionTitle.classList.add("questionTitle");
-    questionTitle.textContent = question.title;
-    questionDiv.appendChild(questionTitle);
-
-    //Création et ajout des choix de la question.
-    const answersList = document.createElement("ol");
-    question.answers.map((possibility, index) => {
-      const answer = document.createElement("li");
-      answer.classList.add("answer");
-      answer.id = index;
-      answer.textContent = possibility.answer;
-      answersList.appendChild(answer);
-      questionDiv.appendChild(answersList);
-    });
-
+    newTitleQuestion(questionDiv, question);
+    //Création et ajout des réponses.
+    newAnswers(questionDiv, question);
     //Création et ajout de la pagination
-    const pagination = document.createElement("p");
-    pagination.classList.add("pagination");
-    pagination.textContent = question.id + 1 + " / " + quiz.length;
-    questionDiv.appendChild(pagination);
+    newPagination(questionDiv, question, quiz);
   });
 }
 
@@ -113,7 +94,6 @@ function playQuiz(quiz) {
     answer.addEventListener("click", () => {
       quiz[currentId].answers.forEach((possibility) => {
         if (possibility.id == answer.id) {
-          console.log(possibility.house);
           table.push(possibility.house);
           if (quiz.length == table.length) {
             selectedHouse(table);
