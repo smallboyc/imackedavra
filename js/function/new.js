@@ -1,3 +1,5 @@
+import { getQuestion } from "./get.js";
+
 export function newDivQuestion(
   questionDiv,
   quizContainer,
@@ -9,11 +11,7 @@ export function newDivQuestion(
   quizContainer.appendChild(questionDiv);
 
   //Initialisation de la 1ère question
-  if (questionDiv.id == currentId) {
-    questionDiv.style.display = "block";
-  } else {
-    questionDiv.style.display = "none";
-  }
+  getQuestion(questionDiv, currentId);
 }
 
 export function newTitleQuestion(questionDiv, question) {

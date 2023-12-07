@@ -4,13 +4,13 @@ import {
   newPagination,
   newTitleQuestion,
   newHouseMember,
-} from "./function/newElement.js";
+} from "./function/new.js";
 import {
   displayFinalResult,
   displayFlag,
   displayHouseTitle,
-  getHouse,
-} from "./function/result.js";
+} from "./function/display.js";
+import { getHouse, getQuestion } from "./function/get.js";
 
 //On récupère la div principale : quizContainer
 const quizContainer = document.getElementById("quiz");
@@ -71,11 +71,7 @@ function playQuiz(quiz) {
       //On récupère les questions pour changer au click d'une réponse.
       const allQuestionDiv = document.querySelectorAll(".questionDiv");
       allQuestionDiv.forEach((questionDiv) => {
-        if (questionDiv.id == currentId) {
-          questionDiv.style.display = "block";
-        } else {
-          questionDiv.style.display = "none";
-        }
+        getQuestion(questionDiv, currentId);
       });
     });
   });
