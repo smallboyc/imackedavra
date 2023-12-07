@@ -1,29 +1,63 @@
-/* soyez pas archi regardant, je teste des chosesssss*/
+/* mobilefirst */
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:center;
-    gap: 70px;
-    margin: 150px;
+    gap: 50px;
+    margin: 80px;
 }
 
 
 h1{
     color: #FFF;
     font-family: Bluu_Next;
-    font-size: 80px;
+    font-size: 48px;
     font-weight: 600;
 }
 
 h2{
     font-family: Sofia_Pro;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
 }
 
 p,ul{
     list-style-type:none;
-    font-size: 36px
+    font-size: 20px
+}
+
+/* tablette */
+@media (min-width : 800px ){
+    main{
+        gap: 65px;
+        margin: 100px;
+    }
+    h1{
+        font-size: 68px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    p,ul{
+        font-size: 30px;
+    }
+}
+
+/* ordi */
+@media (min-width : 1200px ){
+    main{
+        gap: 70px;
+        margin: 150px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 48px;
+    }
+    p,ul{
+        font-size: 36px;
+    }
 }
