@@ -27,7 +27,7 @@ h1
 h2{
     font-family: Bluu_Next;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .questionTitle{
@@ -36,9 +36,10 @@ h2{
     font-weight: bold;
 }
 
-#message{
+h3{
+    font-family: Sofia_Pro;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: semi-bold;
 }
 
 .pagination
@@ -91,8 +92,9 @@ ol{
     gap: 30px;
 }
 
-#members{
+h4{
     font-size: 24px;
+    font-family: Sofia_Pro;
     font-weight: bold;
 }
 
@@ -124,8 +126,11 @@ svg {
 /* Tablette */
 @media (min-width : 800px) 
 {
-    h1{
-        font-size: 40px;
+    h2{
+        font-size: 55px;
+    }
+    h3{
+        font-size: 35px;
     }
 
     .questionTitle{
@@ -147,8 +152,12 @@ svg {
 
 @media (min-width : 1200px) 
 {
-   h1{
-    font-size: 55px;
+    h3{
+        font-size: 48px;
+    }
+
+   h2{
+    font-size: 80px;
    }
    .questionTitle{
     font-size: 32px;
@@ -160,9 +169,6 @@ svg {
    .answer{
     font-size: x-large;
 }
-   #message{
-    font-size: 40px;
-   }
    .flag{
     width: 300px;
 }

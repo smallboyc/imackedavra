@@ -24,7 +24,7 @@
 body{
     color: #FFFF;
     font-family: Sofia_Pro;  
-    background: url(../img/Purple_Background.png) no-repeat center fixed;
+    background: url(../img/Purple_Background.png) no-repeat center fixed ;
     background-size: cover;
     height: 100%;
 }
@@ -34,10 +34,6 @@ body{
     margin-right: 64px;
 }
 
-
-h3,h4{
-    font-family: Bluu_Next;
-}
 
 strong{
     color: #9747FF;

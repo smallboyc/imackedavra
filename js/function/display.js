@@ -6,7 +6,7 @@ export function displayFlag(house, result) {
 }
 
 export function displayHouseTitle(house, result) {
-  const houseTitle = document.createElement("h1");
+  const houseTitle = document.createElement("h2");
   houseTitle.textContent = result[0].name;
   house.appendChild(houseTitle);
 }
