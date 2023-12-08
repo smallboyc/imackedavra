@@ -79,7 +79,7 @@ function playQuiz(quiz) {
 
 //Fonction principale
 async function Quiz() {
-  const fetcher = await fetch("js/quiz.json");
+  const fetcher = await fetch("js/quiz/quiz.json");
   const data = await fetcher.json();
   loadQuiz(data);
   playQuiz(data);

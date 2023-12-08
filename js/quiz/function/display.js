@@ -17,4 +17,3 @@ export function displayFinalResult() {
   const displayTitle = document.getElementById("title");
   displayTitle.style.display = "none";
 }
-

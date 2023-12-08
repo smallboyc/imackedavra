@@ -40,21 +40,16 @@
     z-index: 5;
   }
 
-  .child-link:nth-child(2) {
+  
+
+  .child-link:nth-child(2), .child-link:nth-child(3), .child-link:nth-child(4){
     transform: translate(0, 0);
   }
 
-  .child-link:nth-child(3) {
-    transform: translate(0, 0);
-  }
-
-  .child-link:nth-child(4) {
-    transform: translate(0, 0);
-  }
-
-  .button:hover .child-link:nth-child(2), .button:focus .child-link:nth-child(2) {
+  .button:hover .child-link:nth-child(2) {
     transform: translate(-150%, 0);
   }
+  
 
   .button:hover .child-link:nth-child(3) {
     transform: translate(-100%, -100%);

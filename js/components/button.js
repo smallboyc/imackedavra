@@ -1,7 +1,7 @@
 const links = [
-  { id: 1, title: "maisons", class: "child-link", href: "house", src: "hat" },
-  { id: 2, title: "règles", class: "child-link", href: "rule", src: "owl" },
-  { id: 3, title: "crédits", class: "child-link", href: "credit", src: "vif" },
+  { id: 0, title: "maisons", class: "child-link", href: "house", src: "hat" },
+  { id: 1, title: "règles", class: "child-link", href: "rule", src: "owl" },
+  { id: 2, title: "crédits", class: "child-link", href: "credit", src: "vif" },
 ];
 
 class Button extends HTMLElement {
@@ -18,6 +18,7 @@ class Button extends HTMLElement {
     this.imgParent = document.createElement("img");
     this.divParent.classList.add("parent");
     this.imgParent.src = `../../img/cross.svg`;
+    this.imgParent.alt = `parent`;
     this.parent.appendChild(this.imgParent);
     this.divParent.appendChild(this.parent);
     this.button.appendChild(this.divParent);
@@ -34,6 +35,7 @@ class Button extends HTMLElement {
       this.link.title = link.title;
       this.link.href = `/${link.href}.html`;
       this.imgLink.src = `../../img/${link.src}.svg`;
+      this.imgLink.alt = `${link.title}`;
 
       this.link.appendChild(this.imgLink);
       this.divLink.appendChild(this.link);
