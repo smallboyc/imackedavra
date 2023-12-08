@@ -102,5 +102,91 @@ section > img{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+@media (max-width : 1024px) {
+    section{
+        flex-direction: column;
+    }
+
+    section > img{
+        display:none;
+    }
+
+    article{
+        margin:50px;
+    }
+
+    #gryffondor{
+        height:1540px;
+    }
+    
+    #serpentard{
+        height:1540px;
+    }
+    
+    #serdaigle{
+        height:1540px;
+    }
+    
+    #poufsouffle{
+        height:1540px;
+    }
+}
+
+@media (max-width: 600px){
+    
+    h2{
+        font-size:60px;
+    }
+
+    h3{
+        font-size:32px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    li{
+        font-size:16px;
+    }
+
+    li > svg {
+        width:91px;
+        height:19.5px;
+    }
+
+    #gryffondor{
+        height:1250px;
+    }
+    
+    #serpentard{
+        height:1250px;
+    }
+    
+    #serdaigle{
+        height:1250px;
+    }
+    
+    #poufsouffle{
+        height:1250px;
+    }
+}
+
+@media (max-width:375px) {
+
+    h2{
+        font-size:50px; 
+    }
+
+    h3 + svg{
+        width:150px;
+        margin:15px;
+    }
+
+    ul{
+        margin-top:50px;
+    }
 }
