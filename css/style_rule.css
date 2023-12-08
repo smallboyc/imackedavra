@@ -13,7 +13,7 @@ main{
     gap: 50px;
 }
 
-.block{
+section{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -37,7 +37,7 @@ a{
     text-decoration: none;
 }
 
-h1{
+h2{
     color: #FFF;
     font-family: Bluu_Next;
     font-size: 20px;
@@ -88,7 +88,7 @@ svg {
 
 @media (min-width : 600px)
 {
-    h1{
+    h2{
         font-size: 40px;  
     }
 
@@ -109,7 +109,7 @@ svg {
     main{
         gap: 70px;
     }
-    h1{
+    h2 {
         font-size: 75px;  
     }
 

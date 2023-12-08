@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container
+main
 {
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body{
     animation: apparition 1.5s ease-in-out
 }
 
-#quiz
+h1
 {
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ body{
     gap: 20px;
 }
 
-h1{
+h2{
     font-family: Bluu_Next;
     text-align: center;
     font-size: 30px;
