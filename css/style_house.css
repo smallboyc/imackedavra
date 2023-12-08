@@ -1,8 +1,8 @@
 section{
     display:flex;
-    height:760px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 article{
@@ -10,27 +10,36 @@ article{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    z-index:1;
 }
 
 #gryffondor{
     background-image: url(../img/Gryffondor_Background.png);
-    background-size : 100%;
+    background-size : cover;
     background-repeat: no-repeat;
+    height:760px;
 }
 
 #serpentard{
     background-image: url(../img/Serpentard_Background.png);
-    background-size : 100%;
+    background-size : cover;
+    background-repeat: no-repeat;
+    height:760px;
 }
 
 #serdaigle{
     background-image: url(../img/Serdaigle_Background.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:760px;
 }
 
 #poufsouffle{
     background-image: url(../img/Poufsouffle_Background.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:760px;
 }
 
 h2{
@@ -53,12 +62,12 @@ h3 + svg{
     font-weight:500;
 }
 
-section > article:nth-child(1){
+section > article:nth-child(2){
     max-width: 644px;
     gap:20px;
 }
 
-section > article:nth-child(2){
+section > article:nth-child(3){
     max-width: 413px;
 }
 
@@ -78,6 +87,7 @@ li{
     font-size:24px;
     font-weight:600;
     list-style: none;
+    padding:20px;
 }
 
 li > svg{
@@ -86,4 +96,11 @@ li > svg{
 
 ul > div{
     display:flex;
+}
+
+section > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
