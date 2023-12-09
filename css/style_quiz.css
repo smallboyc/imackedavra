@@ -92,6 +92,36 @@ ol{
     gap: 30px;
 }
 
+.houseLink {
+    display:flex;
+    padding:10px 50px;
+    border: 3px solid #FFF;
+    width:fit-content;
+    margin: 30px;
+    transition:  0.5s ease-out;
+    animation: apparition 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+.houseLink  a{
+    color : #fff;
+    font-size: 12px;
+    text-decoration: none;
+    transition:  0.5s ease-out
+}
+
+.houseLink:hover {
+    background-color: white;
+    transition:  0.5s ease-out
+  }
+
+  .houseLink:hover a {
+    color: #9747FF;
+    transition:  0.5s ease-out
+  }
+
 h4{
     font-size: 24px;
     font-family: Sofia_Pro;
@@ -150,6 +180,7 @@ svg {
     }
 }
 
+
 @media (min-width : 1200px) 
 {
     h3{
@@ -158,6 +189,9 @@ svg {
 
    h2{
     font-size: 80px;
+   }
+   .houseLink a{
+    font-size: 22px;
    }
    .questionTitle{
     font-size: 32px;

@@ -11,6 +11,16 @@ export function displayHouseTitle(house, result) {
   house.appendChild(houseTitle);
 }
 
+export function displayHouseLink(house) {
+  const houseLinkDiv = document.createElement("div");
+  const houseLink = document.createElement("a");
+  houseLink.textContent = "Voir les caractéristiques de la maison";
+  houseLinkDiv.classList.add("houseLink");
+  houseLink.href = "/house.html";
+  houseLinkDiv.appendChild(houseLink);
+  house.appendChild(houseLinkDiv);
+}
+
 export function displayFinalResult() {
   const displayResult = document.querySelector(".result");
   displayResult.style.display = "flex";

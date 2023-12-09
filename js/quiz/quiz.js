@@ -8,6 +8,7 @@ import {
 import {
   displayFinalResult,
   displayFlag,
+  displayHouseLink,
   displayHouseTitle,
 } from "./function/display.js";
 import { getHouse, getQuestion } from "./function/get.js";
@@ -23,6 +24,7 @@ async function result(totalChoices) {
   const house = document.getElementById("house");
   displayFlag(house, result);
   displayHouseTitle(house, result);
+  displayHouseLink(house);
 
   const members = document.getElementById("character");
   //API
