@@ -4,14 +4,12 @@ import {
   newPagination,
   newTitleQuestion,
   newHouseMember,
+  newFlag,
+  newHouseLink,
+  newHouseTitle,
 } from "./function/new.js";
-import {
-  displayFinalResult,
-  displayFlag,
-  displayHouseLink,
-  displayHouseTitle,
-} from "./function/display.js";
-import { getHouse, getQuestion } from "./function/get.js";
+import { displayFinalResult, displayQuestion } from "./function/display.js";
+import { getHouse } from "./function/get.js";
 
 //On récupère la div principale : quizContainer
 const quizContainer = document.getElementById("quiz");
@@ -22,9 +20,9 @@ let currentId = 0;
 async function result(totalChoices) {
   let result = getHouse(totalChoices);
   const house = document.getElementById("house");
-  displayFlag(house, result);
-  displayHouseTitle(house, result);
-  displayHouseLink(house);
+  newFlag(house, result);
+  newHouseTitle(house, result);
+  newHouseLink(house, result);
 
   const members = document.getElementById("character");
   //API
@@ -47,11 +45,8 @@ function loadQuiz(quiz) {
   quiz.forEach((question) => {
     const questionDiv = document.createElement("div");
     newDivQuestion(questionDiv, quizContainer, question, currentId);
-    //Création et ajout du titre de la question
     newTitleQuestion(questionDiv, question);
-    //Création et ajout des réponses.
     newAnswers(questionDiv, question);
-    //Création et ajout de la pagination
     newPagination(questionDiv, question, quiz);
   });
 }
@@ -73,7 +68,7 @@ function playQuiz(quiz) {
       //On récupère les questions pour changer au click d'une réponse.
       const allQuestionDiv = document.querySelectorAll(".questionDiv");
       allQuestionDiv.forEach((questionDiv) => {
-        getQuestion(questionDiv, currentId);
+        displayQuestion(questionDiv, currentId);
       });
     });
   });

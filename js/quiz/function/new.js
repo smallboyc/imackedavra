@@ -1,5 +1,6 @@
-import { getQuestion } from "./get.js";
+import { displayQuestion } from "./display.js";
 
+//Créée la div principale qui contient la question et les réponses
 export function newDivQuestion(
   questionDiv,
   quizContainer,
@@ -11,9 +12,10 @@ export function newDivQuestion(
   quizContainer.appendChild(questionDiv);
 
   //Initialisation de la 1ère question
-  getQuestion(questionDiv, currentId);
+  displayQuestion(questionDiv, currentId);
 }
 
+//Créée le titre de la question sélectionnée
 export function newTitleQuestion(questionDiv, question) {
   const questionTitle = document.createElement("p");
   questionTitle.classList.add("questionTitle");
@@ -21,6 +23,7 @@ export function newTitleQuestion(questionDiv, question) {
   questionDiv.appendChild(questionTitle);
 }
 
+//Créée les réponses proposées
 export function newAnswers(questionDiv, question) {
   const answersList = document.createElement("ol");
   question.answers.map((possibility, index) => {
@@ -33,6 +36,7 @@ export function newAnswers(questionDiv, question) {
   });
 }
 
+//Créée une pagination
 export function newPagination(questionDiv, question, quiz) {
   const pagination = document.createElement("p");
   pagination.classList.add("pagination");
@@ -40,9 +44,35 @@ export function newPagination(questionDiv, question, quiz) {
   questionDiv.appendChild(pagination);
 }
 
-//Fonction qui créé un li (optimisation)
+//Créée une liste d'étudiants
 export function newHouseMember(data, span, i) {
   const li = document.createElement("li");
   li.textContent = data[i].name;
   span.appendChild(li);
+}
+
+//Créée le drapeau de la maison
+export function newFlag(house, result) {
+  const houseImg = document.createElement("img");
+  houseImg.classList.add("flag");
+  houseImg.src = `img/${result[0].name}.svg`;
+  house.appendChild(houseImg);
+}
+
+//Créée le nom de la maison
+export function newHouseTitle(house, result) {
+  const houseTitle = document.createElement("h2");
+  houseTitle.textContent = result[0].name;
+  house.appendChild(houseTitle);
+}
+
+//Créée le lien vers la description de la maison
+export function newHouseLink(house, result) {
+  const houseLinkDiv = document.createElement("div");
+  const houseLink = document.createElement("a");
+  houseLink.textContent = "Voir les caractéristiques de la maison";
+  houseLinkDiv.classList.add("houseLink");
+  houseLink.href = `/house.html#${result[0].name.toLowerCase()}`;
+  houseLinkDiv.appendChild(houseLink);
+  house.appendChild(houseLinkDiv);
 }

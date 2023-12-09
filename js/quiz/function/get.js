@@ -1,11 +1,4 @@
-export function getQuestion(questionDiv, currentId) {
-  if (questionDiv.id == currentId) {
-    questionDiv.style.display = "block";
-  } else {
-    questionDiv.style.display = "none";
-  }
-}
-
+//Détermine la maison du joueur
 export function getHouse(totalChoices) {
   let r, v, b, j;
   r = v = b = j = 0;

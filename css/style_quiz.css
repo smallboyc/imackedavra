@@ -82,7 +82,7 @@ ol{
     width: 200px;
 }
 
-.result{
+#result{
     position: relative;
     max-width: 100vw;
     display: none;
