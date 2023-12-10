@@ -56,6 +56,7 @@ export function newFlag(house, result) {
   const houseImg = document.createElement("img");
   houseImg.classList.add("flag");
   houseImg.src = `img/${result[0].name}.svg`;
+  houseImg.alt = `maison ${result[0].name}`;
   house.appendChild(houseImg);
 }
 
@@ -73,6 +74,7 @@ export function newHouseLink(house, result) {
   houseLink.textContent = "Voir les caractéristiques de la maison";
   houseLinkDiv.classList.add("houseLink");
   houseLink.href = `/house.html#${result[0].name.toLowerCase()}`;
+  houseLink.title = `Lien vers la maison ${result[0].name}`;
   houseLinkDiv.appendChild(houseLink);
   house.appendChild(houseLinkDiv);
 }
