@@ -1,7 +1,27 @@
 [
   {
     "id": 0,
-    "title": "Après votre entrée à l’IMAC vous participez à la fameuse cérémonie du wei. Plusieurs personnalités se forgent, qui es-tu l’IMAC ?",
+    "title": "Avant d’intégrer le château de l’IMAC, d’où venais-tu? ",
+    "answers": [
+      { "id": 0, "answer": "MMI", "house": "R" },
+      { "id": 1, "answer": "DUT Info ", "house": "J" },
+      { "id": 2, "answer": "Prépa", "house": "B" },
+      { "id": 3, "answer": "Autres", "house": "V" }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Un mystérieux objet vous a choisi au début de l’année; as-tu fait ton gage de parrainage?",
+    "answers": [
+      { "id": 0, "answer": "Oui en plus d’un mois", "house": "R" },
+      { "id": 1, "answer": "Non et je le ferai sûrement pas", "house": "V" },
+      { "id": 2, "answer": "Non pas encore mais c’est prévu", "house": "J" },
+      { "id": 3, "answer": "Oui en moins d’un mois", "house": "B" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Après votre entrée à l’IMAC, vous participez à la fameuse cérémonie du WEI. Plusieurs personnalités se forgent, qui es-tu l’IMAC ?",
     "answers": [
       { "id": 0, "answer": "Miss ou Mister Imac", "house": "R" },
       {
@@ -14,7 +34,17 @@
     ]
   },
   {
-    "id": 1,
+    "id": 3,
+    "title": "Dans quelle salle légendaire de Poudlard aimerais-tu étudier pour développer tes compétences?",
+    "answers": [
+      { "id": 0, "answer": "La Salle des Potions, pour mélanger les bonnes technologies", "house": "V" },
+      { "id": 1, "answer": "La Salle sur Demande, pour créer l'environnement parfait", "house": "J" },
+      { "id": 2, "answer": "La Bibliothèque, pour apprendre constamment", "house": "B" },
+      { "id": 3, "answer": "La Salle des Trophées, pour exposer tes réalisations", "house": "R" }
+    ]
+  },
+  {
+    "id": 4,
     "title": "Après t’être familiarisé au monde merveilleux de l’IMAC, quelle est ta matière préférée ?",
     "answers": [
       { "id": 0, "answer": "Pratique Vidéo", "house": "R" },
@@ -24,7 +54,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 5,
     "title": "Vas-tu aux mystiques soirées de l’ESIEE?",
     "answers": [
       { "id": 0, "answer": "Oui", "house": ["R", "V"] },
@@ -32,27 +62,7 @@
     ]
   },
   {
-    "id": 3,
-    "title": "Avant d’intégrer le château de l’IMAC, d’où venais-tu? ",
-    "answers": [
-      { "id": 0, "answer": "MMI", "house": "R" },
-      { "id": 1, "answer": "DUT Info ", "house": "J" },
-      { "id": 2, "answer": "Prépa", "house": "B" },
-      { "id": 3, "answer": "Autres", "house": "V" }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Un mystérieux objet vous a choisi au début de l’année; as-tu fait ton gage de parrainage?",
-    "answers": [
-      { "id": 0, "answer": "Oui en plus d’un mois", "house": "R" },
-      { "id": 1, "answer": "Non et je le ferai sûrement pas", "house": "V" },
-      { "id": 2, "answer": "Non pas encore mais c’est prévu", "house": "J" },
-      { "id": 3, "answer": "Oui en moins d’un mois", "house": "B" }
-    ]
-  },
-  {
-    "id": 5,
+    "id": 6,
     "title": "Lorsqu’il est temps de créer la magie des courts-métrages, de quoi t'occupes-tu ?",
     "answers": [
       { "id": 0, "answer": "La réalisation ", "house": "R" },
@@ -62,7 +72,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Alaric te demande de créer un site web inspiré de la fameuse DOC. Quelle partie réalises-tu?",
     "answers": [
       { "id": 0, "answer": "Le design/graphisme ", "house": "R" },
@@ -72,7 +82,46 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
+    "title": "Si tu devais créer un objet magique pour faciliter le travail d'équipe, ce serait...",
+    "answers": [
+      { "id": 0, "answer": "Un Pense-bête Enchanté, pour ne jamais oublier une idée", "house": "J" },
+      { "id": 1, "answer": "Une Plume de Code, pour écrire du code en un instant", "house": "B" },
+      { "id": 2, "answer": "Des Lunettes de Vision Collaborative, pour voir les idées des autres", "house": "V" },
+      { "id": 3, "answer": "Une Baguette de Communication, pour faciliter la discussion", "house": "R" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Quel système d’exploitation as-tu?",
+    "answers": [
+      { "id": 0, "answer": "Mac OS", "house": "R" },
+      { "id": 1, "answer": "Linux", "house": "V" },
+      { "id": 2, "answer": "Windows", "house": ["J", "B"] }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Un match de Quidditch approche. Choisis une mascotte pour représenter l'équipe de l'IMAC.",
+    "answers": [
+      { "id": 0, "answer": "Le Choixpeau magique", "house": "P" },
+      { "id": 1, "answer": "Le Niffleur, attiré par les idées brillantes", "house": "B" },
+      { "id": 2, "answer": " Le Patronus, protégeant les projets des forces obscures", "house": "R" },
+      { "id": 3, "answer": "L'Hippogriffe, fier et puissant", "house": "V" }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Un IMAC3 te provoque en duel, quel sort informatique te semble le plus utile?",
+    "answers": [
+      { "id": 0, "answer": "Accio Code, pour attirer le code dont tu as besoin", "house": "R" },
+      { "id": 1, "answer": "Lumos Debugging, pour éclairer les erreurs", "house": "B" },
+      { "id": 2, "answer": "Expelliarmus Bug, pour éliminer les bugs", "house": "J" },
+      { "id": 3, "answer": "Alohomora Security, pour ouvrir les portes sécurisées", "house": "V" }
+    ]
+  },
+  {
+    "id": 12,
     "title": "Sonia a accidentellement laissé une bougie brûler dans son bureau, le château Copernic prend feu. Quelle chose sauverais-tu en premier?",
     "answers": [
       { "id": 0, "answer": "L'overboard d'Enguerrand", "house": "R" },
@@ -82,12 +131,73 @@
     ]
   },
   {
-    "id": 8,
-    "title": "Quel système d’exploitation as-tu?",
+    "id": 13,
+    "title": "Quelle serait la meilleure activité pour une journée dédiée à l'innovation et à la créativité à l'IMAC?",
     "answers": [
-      { "id": 0, "answer": "Mac OS", "house": "R" },
-      { "id": 1, "answer": "Linux", "house": "V" },
-      { "id": 2, "answer": "Windows", "house": ["J", "B"] }
+      { "id": 0, "answer": "Un atelier de création d'Animaux Fantastiques", "house": "J" },
+      { "id": 1, "answer": "Un défi de programmation", "house": "B" },
+      { "id": 2, "answer": "Un escape game sur le thème du numérique", "house": "V" },
+      { "id": 3, "answer": "Un concours de sorts créatifs", "house": "R" }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Quel serait ton Patronus à l'IMAC",
+    "answers": [
+      { "id": 0, "answer": "Le Loup", "house": "R" },
+      { "id": 1, "answer": "Le Dauphin", "house": "J" },
+      { "id": 2, "answer": "Le Hibou", "house": "B" },
+      { "id": 3, "answer": "Le Dragon", "house": "V" }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Quel élément magique ajouterais-tu à un court métrage pour le rendre plus captivant ?",
+    "answers": [
+      { "id": 0, "answer": "Une intrigue mystérieuse avec des rebondissements inattendus", "house": "V" },
+      { "id": 1, "answer": "Des effets spéciaux uniques défiant la réalité", "house": "B" },
+      { "id": 2, "answer": "Une créature fantastique en tant que personnage principal ", "house": "R" },
+      { "id": 3, "answer": "Une morale inspirante sur l'amitié et la collaboration", "house": "J" }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Si tu devais choisir un sort pour faire face à une deadline serrée, ce serait...",
+    "answers": [
+      { "id": 0, "answer": "Stress Reducto", "house": "J" },
+      { "id": 1, "answer": "Procrastinatus Minimus", "house": "V" },
+      { "id": 2, "answer": "Tempus Extendus", "house": "B" },
+      { "id": 3, "answer": "Accéléro", "house": "R" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "L'IMAC organise un bal masqué à la manière du bal de Noël à Poudlard, quel est ton déguisement magique?",
+    "answers": [
+      { "id": 0, "answer": "Un Chevalier en armure brillante", "house": "R" },
+      { "id": 1, "answer": "Un Oracle des étoiles", "house": "B" },
+      { "id": 2, "answer": "Un Gardien des créatures fantastiques", "house": "J" },
+      { "id": 3, "answer": "Un Sorcier des ténèbres élégant", "house": "V" }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Ton équipe doit collaborer avec des farfadets pour créer une animation ensorcelée. Comment t'y prends-tu pour travailler avec ces petites créatures espiègles ?",
+    "answers": [
+      { "id": 0, "answer": "Je crée un manuel interactif de programmation traduit en farfadet pour faciliter la communication", "house": "B" },
+      { "id": 1, "answer": "Je décide d'organiser une fête surprise pour les farfadets afin de les apaiser", "house": "J" },
+      { "id": 2, "answer": "Je prévois un sort de protection contre les farfadets pour éviter les sabotages.", "house": "V" },
+      { "id": 3, "answer": "Je propose un partenariat en échange de friandises magiques.", "house": "R" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Quelle citation magique résumerait le mieux l'expérience d'un étudiant IMAC en plein projet?",
+    "answers": [
+      { "id": 0, "answer": "La programmation, c'est comme la magie, mais avec plus de parenthèses.", "house": "J" },
+      { "id": 1, "answer": "Dans le monde du multimédia, tout est possible, même le debuggage impossible.", "house": "B" },
+      { "id": 2, "answer": "Le code est comme une boîte de chocolats, on ne sait jamais sur quel bug on va tomber.", "house": "R" },
+      { "id": 3, "answer": "La vraie magie, c'est de rendre le projet à temps.", "house": "V" }
     ]
   }
 ]
