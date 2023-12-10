@@ -74,7 +74,7 @@ ol{
 .answer:hover{
     scale: 105%;
     transition:  0.5s ease-out;
-    background-color: gainsboro;
+    background-color: white;
     color: #9747FF;
     cursor: pointer;
 }
