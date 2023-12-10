@@ -15,28 +15,28 @@ article{
 }
 
 #gryffondor{
-    background-image: url(../img/Gryffondor_Background.png);
+    background-image: url(../img/Gryffondor_Background.jpg);
     background-size : cover;
     background-repeat: no-repeat;
     height:760px;
 }
 
 #serpentard{
-    background-image: url(../img/Serpentard_Background.png);
+    background-image: url(../img/Serpentard_Background.jpg);
     background-size : cover;
     background-repeat: no-repeat;
     height:760px;
 }
 
 #serdaigle{
-    background-image: url(../img/Serdaigle_Background.png);
+    background-image: url(../img/Serdaigle_Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height:760px;
 }
 
 #poufsouffle{
-    background-image: url(../img/Poufsouffle_Background.png);
+    background-image: url(../img/Poufsouffle_Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height:760px;
@@ -188,6 +188,6 @@ section > img{
     }
 
     ul{
-        margin-top:50px;
+        margin-top:30px;
     }
 }
